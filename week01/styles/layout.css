@@ -1,0 +1,122 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Layout */
+
+body {
+    display: grid;
+    grid-template-columns: 72.5% 27.5%;
+    grid-template-rows: 150px 355px 210px;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+
+    font-family: Georgia, serif;
+    min-height: 100vh;
+}
+
+/* Header */
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-content {
+    background: #333333;
+    color: white;
+    height: 88px;
+    padding: 18px 22px;
+}
+
+.header-content h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Navigation */
+
+nav {
+    background: #000;
+    height: 62px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+
+nav li {
+    flex: 1;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background: #444;
+}
+
+/* Main */
+
+main {
+    grid-area: main;
+    background: #d3d3d3;
+    padding: 18px 22px;
+}
+
+main h1 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+/* Aside */
+
+aside {
+    grid-area: aside;
+    background: white;
+    padding: 18px 22px;
+}
+
+aside h2 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+/* Footer */
+
+footer {
+    grid-area: footer;
+
+    background: #333333;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-top: 22px;
+}
+
+footer h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
