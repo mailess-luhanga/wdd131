@@ -1,0 +1,53 @@
+@media screen and (min-width: 768px) {
+
+    /* Header Layout */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    /* Hide Hamburger */
+
+    #menu {
+        display: none;
+    }
+
+    /* Navigation */
+
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 0;
+    }
+
+    .navigation a {
+        padding: .6rem 1rem;
+        font-size: 1.1rem;
+    }
+
+    /* Gallery */
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+
+    header h2 {
+        font-size: 2.2rem;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+}
