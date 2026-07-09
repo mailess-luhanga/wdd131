@@ -42,7 +42,7 @@ nav {
 }
 
 .navigation {
-  display: flex;
+  display: flexbox;
   flex-direction: column;
   margin-top: 1rem;
 }
