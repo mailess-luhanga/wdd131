@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Zambia - Country Page for WDD131 Assignment">
+    <meta name="author" content="Mailess Luhanga">
+
+    <title>Discover Zambia</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Discover Zambia</h1>
+    </header>
+
+    <main>
+
+        <!-- Hero Image -->
+        <section class="hero">
+
+            <picture>
+
+                <source
+                    srcset="images/zambia-large.webp"
+                    media="(min-width: 800px)">
+
+                <img
+                    src="images/zambia-small.webp"
+                    alt="Victoria Falls in Zambia"
+                    width="1200"
+                    height="700">
+
+            </picture>
+
+        </section>
+
+        <div class="content">
+
+            <!-- Country Data -->
+
+            <section class="card">
+
+                <h2>Data</h2>
+
+                <ul>
+
+                    <li><strong>Country:</strong> Zambia</li>
+
+                    <li><strong>Capital:</strong> Lusaka</li>
+
+                    <li><strong>Population:</strong> 20.7 Million</li>
+
+                    <li><strong>Area:</strong> 752,618 km²</li>
+
+                    <li><strong>Official Language:</strong> English</li>
+
+                    <li><strong>Currency:</strong> Zambian Kwacha (ZMW)</li>
+
+                    <li><strong>Time Zone:</strong> Central Africa Time (UTC +2)</li>
+
+                    <li><strong>Calling Code:</strong> +260</li>
+
+                </ul>
+
+            </section>
+
+            <!-- Weather -->
+
+            <section class="card weather">
+
+                <h2>Weather</h2>
+
+                <img
+                    src="images/weather-svg.svg"
+                    alt="Weather Icon"
+                    class="weather-icon"
+                    width="60"
+                    height="60">
+
+                <p>
+                    <strong>Temperature:</strong>
+                    <span id="temperature">8</span> °C
+                </p>
+
+                <p>
+                    <strong>Conditions:</strong>
+                    Partly Cloudy
+                </p>
+
+                <p>
+                    <strong>Wind:</strong>
+                    <span id="windspeed">10</span> km/h
+                </p>
+
+                <p>
+                    <strong>Wind Chill:</strong>
+                    <span id="windchill">Loading...</span>
+                </p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            | Discover Zambia | WDD131
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+</html>
