@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+header {
+    background: #3b003b;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #d9d2d9;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: .8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: .5rem;
+}
+
+.star-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    font-weight: normal;
+}
+
+.star-option span {
+    font-size: 1.4rem;
+}
+
+.star-option input[type="radio"] {
+    width: 28px;
+    height: 28px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .8rem;
+    font-weight: 500;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+}
+
+.optional {
+    color: #1a0dab;
+    font-weight: 500;
+}
+
+.submit-btn {
+    width: 100%;
+    background: #eee;
+    border: 1px solid #777;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #ddd;
+}
+
+footer {
+    background: #3b003b;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    .rating {
+        gap: .5rem;
+    }
+
+    .star-option span {
+        font-size: 1.1rem;
+    }
+
+    .submit-btn {
+        font-size: 1.5rem;
+    }
+}
