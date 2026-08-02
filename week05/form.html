@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit a product review with ratings, installation date, useful features, and written feedback.">
+    <meta name="author" content="Mailess Luhanga">
+
     <title>Product Review Form</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +28,7 @@
         <div class="form-group">
             <label for="product">Product Name</label>
             <select id="product" name="product" required>
-                <option value="" disabled selected>Choose a Product ...</option>
+                <option value="" disabled selected>Select a Product ...</option>
             </select>
         </div>
 
@@ -34,30 +37,30 @@
 
             <div class="rating">
 
-                <label class="star-option">
-                    <span>★</span>
-                    <input type="radio" name="rating" value="1" required>
-                </label>
+                <div class="star-option">
+                    <label for="star1">★</label>
+                    <input type="radio" id="star1" name="rating" value="1" required>
+                </div>
 
-                <label class="star-option">
-                    <span>★★</span>
-                    <input type="radio" name="rating" value="2">
-                </label>
+                <div class="star-option">
+                    <label for="star2">★★</label>
+                    <input type="radio" id="star2" name="rating" value="2" required>
+                </div>
 
-                <label class="star-option">
-                    <span>★★★</span>
-                    <input type="radio" name="rating" value="3">
-                </label>
+                <div class="star-option">
+                    <label for="star3">★★★</label>
+                    <input type="radio" id="star3" name="rating" value="3" required>
+                </div>
 
-                <label class="star-option">
-                    <span>★★★★</span>
-                    <input type="radio" name="rating" value="4">
-                </label>
+                <div class="star-option">
+                    <label for="star4">★★★★</label>
+                    <input type="radio" id="star4" name="rating" value="4" required>
+                </div>
 
-                <label class="star-option">
-                    <span>★★★★★</span>
-                    <input type="radio" name="rating" value="5">
-                </label>
+                <div class="star-option">
+                    <label for="star5">★★★★★</label>
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                </div>
 
             </div>
         </div>
@@ -73,25 +76,25 @@
 
             <div class="checkbox-group">
 
-                <label>
+                <div class="checkbox-item">
                     <input type="checkbox" id="durability" name="features" value="Durability">
-                    Durability
-                </label>
+                    <label for="durability">Durability</label>
+                </div>
 
-                <label>
+                <div class="checkbox-item">
                     <input type="checkbox" id="ease" name="features" value="Ease of Use">
-                    Ease of Use
-                </label>
+                    <label for="ease">Ease of Use</label>
+                </div>
 
-                <label>
+                <div class="checkbox-item">
                     <input type="checkbox" id="performance" name="features" value="Performance">
-                    Performance
-                </label>
+                    <label for="performance">Performance</label>
+                </div>
 
-                <label>
+                <div class="checkbox-item">
                     <input type="checkbox" id="design" name="features" value="Design">
-                    Design
-                </label>
+                    <label for="design">Design</label>
+                </div>
 
             </div>
         </div>
