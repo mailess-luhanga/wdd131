@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit your movie review and rating to share your opinion with the Movie Review Hub community.">
+    <meta name="author" content="Mailess Luhanga">
+
+    <title>Movie Review Hub | Submit Review</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="images/logo.webp" alt="Movie Review Hub logo" class="logo" width="60" height="60">
+        <h1>Movie Review Hub</h1>
+    </div>
+
+    <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
+
+    <nav id="navigation">
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="submit.html" class="active">Submit Review</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-banner">
+        <h2>Submit Your Movie Review</h2>
+        <p>Share your thoughts and help other movie lovers discover great films.</p>
+    </section>
+
+    <section class="form-section">
+
+        <form id="review-form" class="review-form">
+
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    autocomplete="name"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="title">Movie Title</label>
+                <input
+                    type="text"
+                    id="title"
+                    name="title"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="genre">Genre</label>
+                <select id="genre" name="genre" required>
+                    <option value="" selected disabled>Select a genre</option>
+                    <option value="Action">Action</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Science Fiction">Science Fiction</option>
+                    <option value="Thriller">Thriller</option>
+                </select>
+            </div>
+
+            <fieldset class="form-group">
+                <legend>Rating</legend>
+
+                <label><input type="radio" name="rating" value="1" required> 1 Star</label>
+                <label><input type="radio" name="rating" value="2"> 2 Stars</label>
+                <label><input type="radio" name="rating" value="3"> 3 Stars</label>
+                <label><input type="radio" name="rating" value="4"> 4 Stars</label>
+                <label><input type="radio" name="rating" value="5"> 5 Stars</label>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="review">Your Review</label>
+                <textarea
+                    id="review"
+                    name="review"
+                    rows="6"
+                    required
+                    placeholder="Write your movie review here..."
+                ></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <label>
+                    <input type="checkbox" id="recommend" name="recommend">
+                    I recommend this movie to other viewers.
+                </label>
+            </div>
+
+            <button type="submit" class="button">Submit Review</button>
+
+            <p id="form-message" class="form-message"></p>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Movie Review Hub | Created by Mailess Luhanga</p>
+    <p><a href="references.html">References</a></p>
+</footer>
+
+</body>
+</html>

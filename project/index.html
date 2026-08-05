@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Movie Review Hub features honest movie reviews, ratings, and recommendations to help viewers discover great films.">
+    <meta name="author" content="Mailess Luhanga">
+
+    <title>Movie Review Hub | Home</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="images/logo.webp" alt="Movie Review Hub logo" class="logo" width="60" height="60">
+        <h1>Movie Review Hub</h1>
+    </div>
+
+    <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
+
+    <nav id="navigation">
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="submit.html">Submit Review</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <img src="images/hero.webp" alt="Cinema screen and movie audience" width="1200" height="500">
+
+        <div class="hero-content">
+            <h2>Discover Your Next Favorite Movie</h2>
+            <p>Read honest reviews, explore ratings, and find movies worth watching.</p>
+            <a href="reviews.html" class="button">Browse Reviews</a>
+        </div>
+    </section>
+
+    <section class="intro">
+        <h2>Welcome to Movie Review Hub</h2>
+        <p>
+            Movie Review Hub is a community-driven website where film lovers can read detailed
+            reviews, discover highly rated movies, and share their own opinions. Our goal is to
+            help viewers make informed decisions before watching a movie.
+        </p>
+    </section>
+
+    <section class="featured">
+        <h2>Featured Reviews</h2>
+
+        <div class="movie-grid">
+
+            <article class="movie-card">
+                <img src="images/movie1.webp"
+                     alt="Dune movie poster"
+                     loading="lazy"
+                     width="300"
+                     height="450">
+
+                <h3>Dune: Part Two</h3>
+
+                <p>
+                    A visually stunning science fiction epic with powerful performances and
+                    exceptional world-building.
+                </p>
+
+                <a href="reviews.html" class="button-secondary">Read Review</a>
+            </article>
+
+            <article class="movie-card">
+                <img src="images/movie2.webp"
+                     alt="Oppenheimer movie poster"
+                     loading="lazy"
+                     width="300"
+                     height="450">
+
+                <h3>Oppenheimer</h3>
+
+                <p>
+                    An intense historical drama exploring ambition, responsibility, and the
+                    consequences of scientific discovery.
+                </p>
+
+                <a href="reviews.html" class="button-secondary">Read Review</a>
+            </article>
+
+            <article class="movie-card">
+                <img src="images/movie3.webp"
+                     alt="Spider-Verse movie poster"
+                     loading="lazy"
+                     width="300"
+                     height="450">
+
+                <h3>Spider-Verse</h3>
+
+                <p>
+                    Creative animation, emotional storytelling, and memorable characters make
+                    this one of the strongest superhero films.
+                </p>
+
+                <a href="reviews.html" class="button-secondary">Read Review</a>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="stats">
+        <h2>Community Highlights</h2>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <h3 id="review-count">0</h3>
+                <p>Reviews Shared</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>4.8/5</h3>
+                <p>Average Rating</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>500+</h3>
+                <p>Monthly Readers</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Movie Review Hub | Created by Mailess Luhanga</p>
+    <p><a href="references.html">References</a></p>
+</footer>
+
+</body>
+</html>

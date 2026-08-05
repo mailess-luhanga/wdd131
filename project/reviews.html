@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse movie reviews, ratings, and recommendations on Movie Review Hub to find the best films to watch.">
+    <meta name="author" content="Mailess Luhanga">
+
+    <title>Movie Review Hub | Reviews</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="images/logo.webp" alt="Movie Review Hub logo" class="logo" width="60" height="60">
+        <h1>Movie Review Hub</h1>
+    </div>
+
+    <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
+
+    <nav id="navigation">
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews.html" class="active">Reviews</a></li>
+            <li><a href="submit.html">Submit Review</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-banner">
+        <h2>Movie Reviews</h2>
+        <p>Explore honest reviews and ratings from our movie community.</p>
+    </section>
+
+    <section class="search-section">
+        <label for="search-input">Search reviews</label>
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search by movie title..."
+            aria-label="Search movie reviews"
+        >
+    </section>
+
+    <section class="reviews-list">
+        <h2>Featured Movie Reviews</h2>
+
+        <div id="reviews-container" class="movie-grid">
+
+            <article class="movie-card">
+                <img src="images/movie1.webp"
+                     alt="Dune: Part Two movie poster"
+                     loading="lazy"
+                     width="300"
+                     height="450">
+
+                <h3>Dune: Part Two</h3>
+
+                <p class="rating">Rating: ★★★★★ (5/5)</p>
+
+                <p>
+                    Denis Villeneuve delivers a breathtaking continuation of the Dune saga.
+                    Stunning cinematography, powerful performances, and epic storytelling make
+                    this a must-watch science fiction film.
+                </p>
+            </article>
+
+            <article class="movie-card">
+                <img src="images/movie2.webp"
+                     alt="Oppenheimer movie poster"
+                     loading="lazy"
+                     width="300"
+                     height="450">
+
+                <h3>Oppenheimer</h3>
+
+                <p class="rating">Rating: ★★★★★ (5/5)</p>
+
+                <p>
+                    Christopher Nolan crafts a compelling historical drama with excellent acting,
+                    strong dialogue, and a gripping exploration of the moral weight of scientific
+                    discovery.
+                </p>
+            </article>
+
+            <article class="movie-card">
+                <img src="images/movie3.webp"
+                     alt="Spider-Man: Across the Spider-Verse movie poster"
+                     loading="lazy"
+                     width="300"
+                     height="450">
+
+                <h3>Spider-Man: Across the Spider-Verse</h3>
+
+                <p class="rating">Rating: ★★★★☆ (4.5/5)</p>
+
+                <p>
+                    A visually creative superhero adventure filled with emotional depth, humor,
+                    and unforgettable animation that pushes the genre forward.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="community-reviews">
+        <h2>Community Reviews</h2>
+        <p>
+            Reviews submitted by visitors will appear below after they are added through the
+            review submission form.
+        </p>
+
+        <div id="user-reviews" class="movie-grid"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Movie Review Hub | Created by Mailess Luhanga</p>
+    <p><a href="references.html">References</a></p>
+</footer>
+
+</body>
+</html>

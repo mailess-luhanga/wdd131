@@ -1,0 +1,397 @@
+/* Movie Review Hub - W06 Project */
+
+:root {
+    --primary: #1f3a5f;
+    --secondary: #f4b400;
+    --background: #f8f9fb;
+    --surface: #ffffff;
+    --text: #222222;
+    --muted: #666666;
+    --border: #dddddd;
+    --shadow: 0 4px 10px rgba(0,0,0,0.1);
+    --radius: 10px;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+/* Navigation */
+
+#menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: var(--secondary);
+    color: var(--text);
+}
+
+/* Main */
+
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.page-banner,
+.intro,
+.featured,
+.reviews-list,
+.community-reviews,
+.form-section,
+.references-section,
+.stats {
+    margin-bottom: 2.5rem;
+}
+
+.page-banner {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.page-banner h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-banner p {
+    color: var(--muted);
+}
+
+/* Hero */
+
+.hero {
+    position: relative;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    max-width: 450px;
+}
+
+.hero-content h2 {
+    margin-bottom: 0.75rem;
+}
+
+.hero-content p {
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+
+.button,
+.button-secondary {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.button {
+    background: var(--secondary);
+    color: var(--text);
+}
+
+.button-secondary {
+    background: var(--primary);
+    color: white;
+}
+
+.button:hover,
+.button-secondary:hover {
+    transform: translateY(-2px);
+}
+
+/* Movie grid */
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.movie-card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.movie-card h3,
+.movie-card p,
+.movie-card a {
+    margin: 1rem;
+}
+
+.rating {
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+/* Search */
+
+.search-section {
+    margin-bottom: 2rem;
+}
+
+.search-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.search-section input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+/* Form */
+
+.review-form {
+    background: var(--surface);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.review-form label,
+.review-form legend {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.review-form input[type="text"],
+.review-form input[type="email"],
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font: inherit;
+}
+
+.review-form fieldset {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.review-form fieldset label {
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+}
+
+.review-form button {
+    border: none;
+    cursor: pointer;
+}
+
+.form-message {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: green;
+}
+
+/* Stats */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.stat-box {
+    background: var(--surface);
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.stat-box h3 {
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+/* References */
+
+.references-section ul {
+    margin: 1rem 0 1.5rem 1.5rem;
+}
+
+.references-section li {
+    margin-bottom: 0.75rem;
+}
+
+/* Footer */
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    #menu-button {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+
+    .hero-content {
+        position: static;
+        background: var(--primary);
+        border-radius: 0;
+        max-width: none;
+    }
+
+    .page-banner h2 {
+        font-size: 1.6rem;
+    }
+
+    .review-form {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    main {
+        padding: 1rem;
+    }
+
+    .logo-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding: 1rem;
+    }
+
+    .button,
+    .button-secondary {
+        width: 100%;
+        text-align: center;
+    }
+}
